@@ -1,0 +1,52 @@
+body {
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: consolas, sans-serif;
+    color: black;
+    text-align: center;
+}
+
+h1, h2, h3, p, div, input[type=text] {
+    margin: 15px;
+    text-align: center;
+}
+
+#winner-name {
+    color: blue;
+    font-size: 200%;
+    font-style: bold;
+}
+
+#moves {
+    text-align: left;
+    padding: 10px;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+th, td {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+form, table {
+    margin-bottom: 20px;
+}
+
+input[type=submit], .new-game-link {
+    border-radius: 10px;
+    background: black;
+    color: white;
+    margin-top: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    cursor: pointer;
+    text-decoration: none;
+}

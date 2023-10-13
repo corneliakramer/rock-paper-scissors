@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org" lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Error </title>
+        <link th:href="@{/styles/css/style.css}" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <div>
+            There was an error:
+            <br><br>
+            <p th:text="${error}">
+        </div>
+        <div>
+            <a class="new-game-link" href="/game/play">Play again</a>
+        </div>
+    </body>
+</html>

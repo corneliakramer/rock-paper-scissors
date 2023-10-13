@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org" lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Rock - Scissor - Paper </title>
+        <link th:href="@{/styles/css/style.css}" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <h1>Rock, paper or scissors?</h1>
+        <h2>Player 2</h2>
+        <br>
+        <form action="#" th:action="@{/game/result}" th:object="${player2}" method="post">
+            <p>Choose your username:
+                <br>
+                <input type="text" id="username" th:field="*{playerName}" required="required" pattern="[A-Za-z0-9]{1,30}">
+            </p>
+            <label>Choose your move</label>
+            <div th:each="type : ${T(org.corneliakramer.model.RockPaperScissor).values()}">
+                <div id="moves">
+                    <input type="radio" th:field="*{move}" th:value="${type}" name="moves" required="required">
+                    <label th:for="${#ids.prev('move')}" th:text="${type}">type</label>
+                </div>
+            </div>
+
+
+            <p>
+                <input type="submit" value="Play">
+            </p>
+        </form>
+    </body>
+</html>
