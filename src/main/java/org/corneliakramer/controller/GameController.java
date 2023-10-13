@@ -44,7 +44,8 @@ public class GameController {
         this.game.setPlayer2(player2);
         //Service call to process game
         try {
-            game = gameService.calculateWinner(game);
+            //gameService calculates and sets winner of game
+            gameService.calculateWinner(game);
             model.addAttribute("game", game);
             return "result";
         }
