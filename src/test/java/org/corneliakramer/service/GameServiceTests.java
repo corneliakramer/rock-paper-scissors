@@ -19,7 +19,7 @@ public class GameServiceTests {
     private RockPaperScissorsGame game;
 
     @InjectMocks
-    GameService service;
+    GameService gameService;
 
     @BeforeEach
     public void init() {
@@ -34,7 +34,7 @@ public class GameServiceTests {
         game.getPlayer1().setMove(RockPaperScissor.ROCK);
         game.getPlayer2().setMove(RockPaperScissor.SCISSORS);
         //when
-        service.calculateWinner(game);
+        gameService.calculateWinner(game);
         //then
         assertThat(game.getWinner()).isSameAs(game.getPlayer1());
     }
@@ -45,7 +45,7 @@ public class GameServiceTests {
         game.getPlayer1().setMove(RockPaperScissor.SCISSORS);
         game.getPlayer2().setMove(RockPaperScissor.PAPER);
         //when
-        service.calculateWinner(game);
+        gameService.calculateWinner(game);
         //then
         assertThat(game.getWinner()).isSameAs(game.getPlayer1());
     }
@@ -56,7 +56,7 @@ public class GameServiceTests {
         game.getPlayer1().setMove(RockPaperScissor.PAPER);
         game.getPlayer2().setMove(RockPaperScissor.ROCK);
         //when
-        service.calculateWinner(game);
+        gameService.calculateWinner(game);
         //then
         assertThat(game.getWinner()).isSameAs(game.getPlayer1());
     }
@@ -67,7 +67,7 @@ public class GameServiceTests {
         game.getPlayer1().setMove(RockPaperScissor.ROCK);
         game.getPlayer2().setMove(RockPaperScissor.SCISSORS);
         //when
-        service.calculateWinner(game);
+        gameService.calculateWinner(game);
         //then
         assertThat(game.getWinner()).isSameAs(game.getPlayer1());
     }
@@ -78,7 +78,7 @@ public class GameServiceTests {
         game.getPlayer1().setMove(RockPaperScissor.SCISSORS);
         game.getPlayer2().setMove(RockPaperScissor.ROCK);
         //when
-        service.calculateWinner(game);
+        gameService.calculateWinner(game);
         //then
         assertThat(game.getWinner()).isSameAs(game.getPlayer2());
     }
@@ -90,7 +90,7 @@ public class GameServiceTests {
         game.getPlayer2().setMove(RockPaperScissor.ROCK);
         // then
         assertThrows(NoWinnerException.class, () -> {
-            service.calculateWinner(game);
+            gameService.calculateWinner(game);
         });
     }
 }
