@@ -12,24 +12,23 @@ An in-depth paragraph about your project and overview of use.
 Minimal prerequisites to install and run the application:
 * Docker
 * Git
-* Gradle
 
 ### Installing
 Note: This instruction is written for Windows users. 
 1. Start Docker and open a command terminal (e.g. Git Bash) and move to the desired location for the application. 
-1. Clone the application repository
+1. Clone the application repository.
       ```
       git clone https://github.com/corneliakramer/rock-paper-scissors.git
       ```
-1. Move to the application root folder
+1. Move to the application root folder.
       ```
       cd rock-paper-scissors
       ```
-1. Run gradle build locally
+1. Build locally with gradle wrapper.
       ```
       ./gradlew clean build
       ```
-1. Build the docker image
+1. Build the docker image.
       ```
       docker build -t rock-paper-scissors .
       ```
