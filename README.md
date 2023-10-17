@@ -1,10 +1,13 @@
 # Rock-Paper-Scissors Game App
 
-A simple web app for playing rock-paper-scissors. 
+This is a simple web application for playing a game of rock-paper-scissors. 
 
 ## Description
-
-An in-depth paragraph about your project and overview of use.
+Two users can play a game of rock-paper-scissors by interacting with the application through a web browser.
+* Code language: Java 17
+* Application frameworks: Spring Boot and Thymeleaf
+* Build tool: Gradle
+* Test framework: JUnit and Mockito
 
 ## Getting Started
 
@@ -41,7 +44,7 @@ Note: This instruction is written for Windows users.
 1. Open a browser and go to http://localhost:8080/ to use the application. 
 
 ### Exiting program
-* Exit the program and remove the running container.
+1. Exit the program and remove the running container.
       ```
       docker rm -f gameApp
       ```
@@ -49,8 +52,3 @@ Note: This instruction is written for Windows users.
 ## Authors
 
 Cornelia Kramer Karlsson
-
-Contributors names and contact info
-
-ex. Dominique Pizzie  
-ex. [@DomPizzie](https://twitter.com/dompizzie)
