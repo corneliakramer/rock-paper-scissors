@@ -18,13 +18,13 @@ Minimal prerequisites to install and run the application:
 Note: This instruction is written for Windows users. 
 1. Open command terminal (e.g. Git Bash) and move to the desired location for application. 
 1. Clone the applications repository 
-```
-git clone https://github.com/corneliakramer/rock-paper-scissors.git
-```
+      ```
+      git clone https://github.com/corneliakramer/rock-paper-scissors.git
+      ```
 1. Move to the application root folder
-```
-cd rock-paper-scissors
-```
+      ```
+      cd rock-paper-scissors
+      ```
 
 ### Executing program
 
