@@ -18,8 +18,8 @@ The application can be installed and run in two ways:
 ### Installation guide
 #### Dependencies
 Minimal prerequisites to install and run the application:
-* Docker
-* Git
+1. Docker
+1. Git
   
 Note: This instruction is written for Windows users.
 
