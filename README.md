@@ -16,8 +16,8 @@ Minimal prerequisites to install and run the application:
 
 ### Installing
 Note: This instruction is written for Windows users. 
-1. Open command terminal (e.g. Git Bash) and move to the desired location for application. 
-1. Clone the applications repository 
+1. Start Docker and open a command terminal (e.g. Git Bash) and move to the desired location for application. 
+1. Clone the applications repository
       ```
       git clone https://github.com/corneliakramer/rock-paper-scissors.git
       ```
@@ -25,21 +25,28 @@ Note: This instruction is written for Windows users.
       ```
       cd rock-paper-scissors
       ```
+1. Run gradle build locally
+      ```
+      ./gradlew clean build
+      ```
+1. Build the docker image
+      ```
+      docker build -t rock-paper-scissors .
+      ```
 
 ### Executing program
 
-* How to run the program
-* Step-by-step bullets
-```
-code blocks for commands
-```
+1. Run a docker container using the image from the installation.
+      ```
+      docker run --name gameApp -dp 8080:8080 rock-paper-scissors
+      ```
+1. Open a browser and go to http://localhost:8080/ to use the application. 
 
-## Help
-
-Any advise for common problems or issues.
-```
-command to run if program contains helper info
-```
+### Exiting program
+* Exit the program and remove the running container.
+      ```
+      docker rm -f gameApp
+      ```
 
 ## Authors
 
