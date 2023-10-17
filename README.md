@@ -8,6 +8,7 @@ Two users can play a game of rock-paper-scissors by interacting with the applica
 * Application frameworks: Spring Boot and Thymeleaf
 * Build tool: Gradle
 * Test framework: JUnit and Mockito
+* Design pattern: MVC
 
 ## Getting Started
 The application can be installed and run in two ways:
