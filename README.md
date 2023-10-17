@@ -9,13 +9,17 @@ An in-depth paragraph about your project and overview of use.
 ## Getting Started
 
 ### Dependencies
-
-* Describe any prerequisites, libraries, OS version, etc., needed before installing program.
-* ex. Windows 10
+Minimal prerequisites to install and run the application:
+* Docker
+* Git
+* Gradle
 
 ### Installing
 
 * How/where to download your program
+```
+git clone https://github.com/corneliakramer/rock-paper-scissors.git
+```
 * Any modifications needed to be made to files/folders
 
 ### Executing program
