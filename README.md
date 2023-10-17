@@ -16,8 +16,8 @@ Minimal prerequisites to install and run the application:
 
 ### Installing
 Note: This instruction is written for Windows users. 
-1. Start Docker and open a command terminal (e.g. Git Bash) and move to the desired location for application. 
-1. Clone the applications repository
+1. Start Docker and open a command terminal (e.g. Git Bash) and move to the desired location for the application. 
+1. Clone the application repository
       ```
       git clone https://github.com/corneliakramer/rock-paper-scissors.git
       ```
