@@ -12,14 +12,14 @@ Two users can play a game of rock-paper-scissors by interacting with the applica
 
 ## Getting Started
 The application can be installed and run in two ways:
-* By cloning repo into an IDE project, and build and run the app through the IDE of choice.
-* By cloning the repo to build a docker image and run the application through a docker container. How to do this is described in the installation guide below. 
+1. By cloning repo into an IDE project, and build and run the app through the IDE of choice.
+1. By cloning the repo to build a docker image and run the application through a docker container. How to do this is described in the installation guide below. 
 
 ### Installation guide
 #### Dependencies
 Minimal prerequisites to install and run the application:
-1. Docker
-1. Git
+* Docker
+* Git
   
 Note: This instruction is written for Windows users.
 
