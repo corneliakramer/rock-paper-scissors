@@ -44,6 +44,7 @@ Note: This instruction is written for Windows users.
 ### Exiting program
 
 * Exit the program and remove the running container.
+
                     ```
                     docker rm -f gameApp
                     ```
