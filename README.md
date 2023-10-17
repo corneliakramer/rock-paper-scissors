@@ -42,7 +42,8 @@ Note: This instruction is written for Windows users.
 1. Open a browser and go to http://localhost:8080/ to use the application. 
 
 ### Exiting program
-* Exit the program and remove the running container.
+
+Exit the program and remove the running container.
       ```
       docker rm -f gameApp
       ```
