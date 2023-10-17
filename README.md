@@ -34,7 +34,6 @@ Note: This instruction is written for Windows users.
       ```
 
 ### Executing program
-
 1. Run a docker container using the image from the installation.
       ```
       docker run --name gameApp -dp 8080:8080 rock-paper-scissors
@@ -42,12 +41,16 @@ Note: This instruction is written for Windows users.
 1. Open a browser and go to http://localhost:8080/ to use the application. 
 
 ### Exiting program
+1. Exit the program and remove the running container.
+      ```
+      docker rm -f gameApp
+      ```
 
 * Exit the program and remove the running container.
 
-                    ```
+                    
                     docker rm -f gameApp
-                    ```
+                    
 
 ## Authors
 
