@@ -45,13 +45,7 @@ Note: This instruction is written for Windows users.
       ```
       docker rm -f gameApp
       ```
-
-* Exit the program and remove the running container.
-
                     
-                    docker rm -f gameApp
-                    
-
 ## Authors
 
 Cornelia Kramer Karlsson
