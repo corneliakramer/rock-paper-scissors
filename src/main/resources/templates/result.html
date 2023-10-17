@@ -1,18 +1,17 @@
 <!DOCTYPE html>
 <html xmlns:th="https://www.thymeleaf.org" lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Game Result </title>
-    <link th:href="@{/styles/css/style.css}" rel="stylesheet" type="text/css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Game Result </title>
+        <link th:href="@{/styles/css/style.css}" rel="stylesheet" type="text/css">
+    </head>
     <body>
         <div>
             <h3>The winner is:</h3>
             <p id="winner-name" th:text="${game.winner.playerName}"></p>
         </div>
         <div>
-            <!-- Insert table with game stats (user and moves) -->
             <h3>Game Summery</h3>
             <table>
                 <tr>

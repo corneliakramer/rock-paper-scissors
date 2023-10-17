@@ -1,9 +1,13 @@
 package org.corneliakramer.model;
 
+/**
+ * @author Cornelia Kramer Karlsson
+ * Model class for a game of RockPaperScissors.
+ * @see {@link Player}, {@link RockPaperScissor}
+ */
 public class RockPaperScissorsGame {
     private Player player1;
     private Player player2;
-
     private Player winner;
 
     public RockPaperScissorsGame() {

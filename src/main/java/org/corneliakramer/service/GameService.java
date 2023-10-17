@@ -9,10 +9,16 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Objects;
 
+/**
+ * @author Cornelia Kramer Karlsson
+ * Service class for a {@link RockPaperScissorsGame}.
+ */
 @Service
 public class GameService {
 
-    // Enum hashmap with winning combinations (winner, loser)
+    /**
+     * Enum hashmap with winning combinations (winner, loser).
+     */
     private static final Map<RockPaperScissor, RockPaperScissor> winningMoves;
     static {
         winningMoves = new HashMap<>();
@@ -24,14 +30,18 @@ public class GameService {
     public GameService() {
     }
 
-    // Find the winner in a RockPaperScissors game and return the game updated with winner.
+    /**
+     * Calculates which player wins the game and sets the winner.
+     * @param game - the RockPaperScissors game.
+     * @return game updated with the winner.
+     * @throws NoWinnerException if the players make the same move resulting in no winner of the game.
+     */
     public RockPaperScissorsGame calculateWinner(RockPaperScissorsGame game) throws NoWinnerException {
         RockPaperScissor player1Move = game.getPlayer1().getMove();
         RockPaperScissor player2Move = game.getPlayer2().getMove();
 
         // Check if game is a draw -> no winner
         if (Objects.equals(player1Move, player2Move)) {
-            // no winner, game is a draw
             throw new NoWinnerException("No winner - the game is a draw.");
         }
         // check if player 1 has a winning move

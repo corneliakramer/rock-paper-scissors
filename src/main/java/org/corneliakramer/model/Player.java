@@ -2,8 +2,11 @@ package org.corneliakramer.model;
 
 import jakarta.validation.constraints.*;
 
+/**
+ * @author Cornelia Kramer Karlsson
+ * Model class for a player of {@link RockPaperScissorsGame}.
+ */
 public class Player {
-
     @NotBlank(message = "Player name must be set")
     @Size(max=25, message="Player name can't be longer than 25 characters")
     @Pattern(regexp = "^[a-zA-Z0-9_.-]*$", message="Player name can only contain letters (A-Z, a-z), numbers, dot, dash and underscore) ")
