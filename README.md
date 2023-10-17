@@ -15,12 +15,16 @@ Minimal prerequisites to install and run the application:
 * Gradle
 
 ### Installing
-
-* How/where to download your program
+Note: This instruction is written for Windows users. 
+1. Open command terminal (e.g. Git Bash) and move to the desired location for application. 
+1. Clone the applications repository 
 ```
 git clone https://github.com/corneliakramer/rock-paper-scissors.git
 ```
-* Any modifications needed to be made to files/folders
+1. Move to the application root folder
+```
+cd rock-paper-scissors
+```
 
 ### Executing program
 
